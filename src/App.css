@@ -18,3 +18,19 @@
     width: 100%;
     padding: 0px 20px;
 }
+
+@media (max-width: 1000px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-container {
+        padding: 0px 6px;
+    }
+}

@@ -103,6 +103,21 @@ function List({ results, page, totalResults, setQuery }) {
           </a>
         );
       })}
+      <div className="flex flex--align-center flex--justify-center pagination">
+        <span
+          className={page <= 1 ? "pagination--disabled" : null}
+          onClick={prevPage}
+        >
+          {"< Prev"}
+        </span>
+        <span>{page}</span>
+        <span
+          className={page * 10 >= totalResults ? "pagination--disabled" : null}
+          onClick={nextPage}
+        >
+          {"Next >"}
+        </span>
+      </div>
     </div>
   );
 }

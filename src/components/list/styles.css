@@ -1,6 +1,7 @@
 .list-container {
     width: 100%;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .pagination {
@@ -27,6 +28,7 @@
     font-family: Montserrat;
     border: 2px solid dimgray;
     text-decoration: none;
+    overflow-wrap: break-word;
 }
 
 .card:hover {
@@ -50,4 +52,10 @@
 .card svg {
     fill: gray;
     margin: 0 5px 0 10px;
+}
+
+@media (max-width: 500px) {
+    .card {
+        font-size: 13px
+    }
 }

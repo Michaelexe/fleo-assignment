@@ -35,7 +35,7 @@ body {
 
 .animated-input__labels {
   position: absolute;
-  left: 15%;
+  left: calc(10% + 15px);
   font-family: Montserrat;
   font-weight: 700;
   color: dimgray;
@@ -66,7 +66,7 @@ body {
 /* main labels */
 .animated-input__inputs:focus~.animated-input__labels,
 .animated-input__inputs:not(:placeholder-shown)~.animated-input__labels {
-  transform: translate(-10px, -20px);
+  transform: translate(-8px, -20px);
   font-size: 13px;
   font-weight: 600;
   padding: 0px 3px;
