@@ -15,3 +15,6 @@ stuff like name, language and sort by as the page refreshes anyway causing
 the useEffect to run anyway. And to be honest I don't know why I am typing
 all this instead of simply deleting those lines but I guess at least there
 is something in my readme file for once.
+
+At the moment I know enough to make anything, but how to make something the
+'right way' is what I would hope to learn during this internship.
