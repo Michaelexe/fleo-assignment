@@ -1,13 +1,74 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #111111;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
+
+.flex--align-center {
+  align-items: center;
+}
+
+.animated-input {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.animated-input__labels {
+  position: absolute;
+  left: 15%;
+  font-family: Montserrat;
+  font-weight: 700;
+  color: dimgray;
+  font-size: 20px;
+  background-color: #111111;
+  pointer-events: none;
+  transition: transform 200ms ease-in, font-size 200ms ease-in,
+    padding 200ms ease-in, color 100ms ease-in;
+}
+
+.animated-input__inputs {
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0px 15px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.animated-input__inputs:focus {
+  outline: none;
+}
+
+/* main labels */
+.animated-input__inputs:focus~.animated-input__labels,
+.animated-input__inputs:not(:placeholder-shown)~.animated-input__labels {
+  transform: translate(-10px, -20px);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0px 3px;
+  color: white;
 }

@@ -1,0 +1,53 @@
+.list-container {
+    width: 100%;
+    gap: 20px;
+}
+
+.pagination {
+    color: #58a1ec;
+    font-family: Montserrat;
+    gap: 20px;
+}
+
+.pagination--disabled {
+    color: gray;
+    text-decoration: none !important;
+    cursor: default !important;
+}
+
+.pagination span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-family: Montserrat;
+    border: 2px solid dimgray;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px dimgray;
+}
+
+.card__owner {
+    color: gray;
+    font-style: italic;
+}
+
+.card__desc {
+    margin: 10px 0px;
+}
+
+.card__others {
+    margin-left: auto;
+}
+
+.card svg {
+    fill: gray;
+    margin: 0 5px 0 10px;
+}

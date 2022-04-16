@@ -1,0 +1,36 @@
+.filters {
+    max-width: 400px;
+    width: calc(100% - 10px);
+    /* background-color: red; */
+}
+
+.filters form {
+    gap: 20px;
+}
+
+.filters select {
+    width: 80%;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 0px 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.filters option {
+    color: black;
+}
+
+.filters button {
+    background-color: green;
+    border: none;
+    font-family: Montserrat;
+    color: white;
+    font-weight: 800;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+}
