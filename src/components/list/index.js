@@ -31,21 +31,25 @@ function List({ results, page, totalResults, setQuery }) {
 
   return (
     <div className="list-container flex flex--column">
-      <div className="flex flex--align-center flex--justify-center pagination">
-        <span
-          className={page <= 1 ? "pagination--disabled" : null}
-          onClick={prevPage}
-        >
-          {"< Prev"}
-        </span>
-        <span>{page}</span>
-        <span
-          className={page * 10 >= totalResults ? "pagination--disabled" : null}
-          onClick={nextPage}
-        >
-          {"Next >"}
-        </span>
-      </div>
+      {results[0] ? (
+        <div className="flex flex--align-center flex--justify-center pagination">
+          <span
+            className={page <= 1 ? "pagination--disabled" : null}
+            onClick={prevPage}
+          >
+            {"< Prev"}
+          </span>
+          <span>{page}</span>
+          <span
+            className={
+              page * 10 >= totalResults ? "pagination--disabled" : null
+            }
+            onClick={nextPage}
+          >
+            {"Next >"}
+          </span>
+        </div>
+      ) : null}
       {results.map((item) => {
         return (
           <a
@@ -103,21 +107,25 @@ function List({ results, page, totalResults, setQuery }) {
           </a>
         );
       })}
-      <div className="flex flex--align-center flex--justify-center pagination">
-        <span
-          className={page <= 1 ? "pagination--disabled" : null}
-          onClick={prevPage}
-        >
-          {"< Prev"}
-        </span>
-        <span>{page}</span>
-        <span
-          className={page * 10 >= totalResults ? "pagination--disabled" : null}
-          onClick={nextPage}
-        >
-          {"Next >"}
-        </span>
-      </div>
+      {results[0] ? (
+        <div className="flex flex--align-center flex--justify-center pagination">
+          <span
+            className={page <= 1 ? "pagination--disabled" : null}
+            onClick={prevPage}
+          >
+            {"< Prev"}
+          </span>
+          <span>{page}</span>
+          <span
+            className={
+              page * 10 >= totalResults ? "pagination--disabled" : null
+            }
+            onClick={nextPage}
+          >
+            {"Next >"}
+          </span>
+        </div>
+      ) : null}
     </div>
   );
 }
