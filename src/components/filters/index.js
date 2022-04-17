@@ -25,6 +25,7 @@ function Filters() {
           <label className="animated-input__labels">Search By Language</label>
         </div>
         <select name="sortby">
+          <option value="">Sort By</option>
           <option value="name">Name</option>
           <option value="stars">Stars</option>
         </select>
