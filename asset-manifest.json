@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/fleo-assignment/static/css/main.fd679d49.css",
-    "main.js": "/fleo-assignment/static/js/main.6af97922.js",
+    "main.css": "/fleo-assignment/static/css/main.c2c6b763.css",
+    "main.js": "/fleo-assignment/static/js/main.f2f16671.js",
     "static/media/logo.png": "/fleo-assignment/static/media/logo.25b0b67ae1cd88fd8601.png",
     "index.html": "/fleo-assignment/index.html",
-    "main.fd679d49.css.map": "/fleo-assignment/static/css/main.fd679d49.css.map",
-    "main.6af97922.js.map": "/fleo-assignment/static/js/main.6af97922.js.map"
+    "main.c2c6b763.css.map": "/fleo-assignment/static/css/main.c2c6b763.css.map",
+    "main.f2f16671.js.map": "/fleo-assignment/static/js/main.f2f16671.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd679d49.css",
-    "static/js/main.6af97922.js"
+    "static/css/main.c2c6b763.css",
+    "static/js/main.f2f16671.js"
   ]
 }
